@@ -1,0 +1,35 @@
+body{
+    background-color: grey;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header{
+    text-align: center;
+    font-size: 1.2em;
+    height: 3em;
+    padding-top:1em ;
+    background-color: lightgrey;
+}
+
+p{
+    margin: 0;
+}
+
+.container{
+    width: 98vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.pausebtn{
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+button, select{
+    background-color: lightgrey;
+    border-radius: 10px;
+}

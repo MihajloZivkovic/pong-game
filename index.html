@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong game!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <p>PONG GAME (javascript only)</p>
+        <p>Made by Mihajlo Zivkovic</p>
+    </header>
+    <div class="container">
+        <button onclick="pauseScreen()" class="pausebtn">PAUSE GAME</button>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="config">
+            <div class="row">
+                <label for="difficulty">Difficulty:</label>
+                <select id = "difficulty" name="difficulty">
+                    <option id="easy" value="1.5">EASY</option>
+                    <option id="medium" value="2.3">MEDIUM</option>
+                    <option id="hard" value="3">HARD</option>
+                </select>
+                <button onclick="getDifficulty()">SET</button>
+            </div>
+            <br>
+            <div class="row">
+                <label for="canvasDim">Game size:</label>
+                <select id = "canvasDim" name="canvasDim">
+                    <option id="small" value="700">700 x 500 px</option>
+                    <option id="medium" value="800" selected>800 x 600 px</option>
+                    <option id="big" value="900">900 x 700 px</option>
+                </select>
+                <button onclick="getDimensions()">SET</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
